@@ -322,6 +322,15 @@ class App():
         self.button = Button(self.second_frame, text="OK", command=self.custom_cmd)
         self.button.pack()
         self.second_frame.bind("<ButtonRelease-1>", self.move_release)
+        
+        self.third_window = Toplevel()
+        self.third_window.geometry("{}x{}+{}+{}".format(self.second_width,self.second_height,self.second_x,self.second_y-300))
+        self.third_window.attributes("-alpha", 0.9)
+        self.third_window.wm_attributes('-topmost', 1)
+        self.third_window.overrideredirect(True)
+
+        self.third_frame = CustomFrame(self.third_window)
+        self.third_frame.pack(expand=True, fill='both')
 
         
         
