@@ -348,7 +348,7 @@ class App():
         per_frame_action = PerFrame(self.scriptText)
         per_frame_action.syntax_tag()
         
-        print "test"
+        print "tessdfsdfsdfsdfsdft"
 
         
 
