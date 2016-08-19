@@ -1,11 +1,11 @@
 from Tkinter import *
-import sys
 from code import InteractiveConsole
 from imp import new_module
-import subprocess
 from threading import Thread
 import numpy as np
 import cPickle as pickle
+import sys, subprocess
+
 
 class Console(InteractiveConsole):
  
