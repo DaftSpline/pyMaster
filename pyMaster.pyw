@@ -153,7 +153,7 @@ class App():
         self.second_window.geometry("{}x{}+{}+{}".format(self.second_width,self.second_height,self.second_x,self.second_y))
 
     def cmd(self, command):
-        return subprocess.Popen(command.split(), shell = True, stdout = subprocess.PIPE, stdin = subprocess.PIPE, stderr = subprocess.PIPE).communicate()
+        return subprocess.Popen(command.split(), stdout = subprocess.PIPE, stdin = subprocess.PIPE, stderr = subprocess.PIPE).communicate()
         
         
 
